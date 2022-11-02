@@ -42,6 +42,8 @@ This is a [Tailwind](https://tailwindcss.com/) plugin for automatically generati
 }
  </code>
 </pre>
+<br>
+<br>
 4. Enjoy :)
 <pre>
 <code>
