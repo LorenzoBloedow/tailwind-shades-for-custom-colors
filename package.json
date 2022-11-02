@@ -1,6 +1,6 @@
 {
   "name": "tailwind-shades-for-custom-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Autogenerate up to 10 shades for your custom colors defined in tailwind.config.js",
   "main": "dist/index.js",
   "repository": {
