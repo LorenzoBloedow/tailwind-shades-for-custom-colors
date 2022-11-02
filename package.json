@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Autogenerate up to 10 shades for your custom colors defined in tailwind.config.js",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LorenzoBloedow/tailwind-shades-for-custom-colors.git"
+  },
   "keywords": [
     "tailwind",
     "plugin",
