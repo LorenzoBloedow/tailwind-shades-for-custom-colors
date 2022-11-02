@@ -36,7 +36,7 @@ function autoGenerateShades({ theme, addUtilities }) {
     const newShades = {}
     
     if (!hasExtendColors(extendColors)) {
-        console.error("[shadesforcustomcolors]: No shades were generated because 'theme.extend.colors' was not found.")
+        console.error("[shadesforcustomcolors]: No shades were generated because 'theme.extend.colors' was not found.");
         return;
     }
 
@@ -49,7 +49,7 @@ function autoGenerateShades({ theme, addUtilities }) {
             continue;
         }
 
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 1; i < 10; i++) {
             if (!HEX.test(currentColor)) {
                 console.warn("[shadesforcustomcolors]: Skipping shade creation for " + colorName + ".");
                 console.warn("[shadesforcustomcolors]: Note that for this plugin to work you must write your custom colors in hex format.");
@@ -57,11 +57,11 @@ function autoGenerateShades({ theme, addUtilities }) {
             }
             const colorInHSL = hexToHSL(currentColor);
 
-                newShades[`.text-${colorName}-${(i * 100)}`] = {
+                newShades[`.text-${colorName}-${(1000 - (i * 100))}`] = {
                     color: `hsl(${colorInHSL.h}, ${colorInHSL.s}%, ${i * 10}%)`
                 }
 
-                newShades[`.bg-${colorName}-${(i * 100)}`] = {
+                newShades[`.bg-${colorName}-${(1000 - (i * 100))}`] = {
                     backgroundColor: `hsl(${colorInHSL.h}, ${colorInHSL.s}%, ${i * 10}%)`
                 }
             }

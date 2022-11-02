@@ -567,10 +567,10 @@ video {
   color: rgb(141 241 171 / var(--tw-text-opacity));
 }
 
-.text-avocado-100 {
+.text-avocado-900 {
   color: hsl(138, 78%, 10%);
 }
 
-.text-avocado-900 {
-  color: hsl(138, 78%, 90%);
+.text-avocado-600 {
+  color: hsl(138, 78%, 40%);
 }
