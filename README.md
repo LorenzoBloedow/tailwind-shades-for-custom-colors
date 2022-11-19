@@ -17,7 +17,7 @@ This is a [Tailwind](https://tailwindcss.com/) plugin for automatically generati
 	theme: {
 		extend: {},
 	},
-	<b>plugins: [require("shadesforcustomcolors")]</b>
+	<b>plugins: [require("tailwind-shades-for-custom-colors")]</b>
 }
  </code>
 </pre>
@@ -38,7 +38,7 @@ This is a [Tailwind](https://tailwindcss.com/) plugin for automatically generati
 			}</b>
 		},
 	},
-	plugins: [require("shadesforcustomcolors")]
+	plugins: [require("tailwind-shades-for-custom-colors")]
 }
  </code>
 </pre>
